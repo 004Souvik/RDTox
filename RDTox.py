@@ -41,6 +41,9 @@ show_preview = st.sidebar.checkbox("Show uploaded dataset preview", value=True)
 run_button = st.sidebar.button("Run prediction")
 
 st.sidebar.markdown("<br><br>", unsafe_allow_html=True)
+st.sidebar.markdown("<br><br>", unsafe_allow_html=True)
+st.sidebar.markdown("<br><br>", unsafe_allow_html=True)
+st.sidebar.markdown("<br><br>", unsafe_allow_html=True)
 
 try:
     with open("Sample.xlsx", "rb") as f:
@@ -131,6 +134,7 @@ else:
 
 # small footer
 st.markdown("---")
+
 
 
 
