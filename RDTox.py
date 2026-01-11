@@ -41,7 +41,7 @@ show_preview = st.sidebar.checkbox("Show uploaded dataset preview", value=True)
 run_button = st.sidebar.button("Run prediction")
 
 try:
-    with open("lib\Sample.xlsx", "rb") as f:
+    with open("Sample.xlsx", "rb") as f:
         sample_bytes = f.read()
 
     st.sidebar.download_button(
@@ -129,5 +129,6 @@ else:
 
 # small footer
 st.markdown("---")
+
 
 
