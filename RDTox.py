@@ -14,6 +14,7 @@ def load_train_data():
     # load training files (paths relative to the app location)
     l408 = pd.read_excel("lib/oecd408/Train.xlsx", index_col=0)
     l407_422 = pd.read_excel("lib/oecd407&422/Train.xlsx", index_col=0)
+    sample = pd.read_excel("lib/Sample.xlsx")
     return l408, l407_422
 
 
@@ -39,6 +40,12 @@ st.sidebar.title("RDTox - Controls")
 uploaded_file = st.sidebar.file_uploader("Upload your dataset (.xlsx)", type=["xlsx"]) 
 show_preview = st.sidebar.checkbox("Show uploaded dataset preview", value=True)
 run_button = st.sidebar.button("Run prediction")
+
+st.sidebar.download_button(
+        label="📥 Sample File",
+        data=sample,
+        file_name="Sample.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
 # optional: show background / logo if exists
 try:
@@ -116,3 +123,4 @@ else:
 
 # small footer
 st.markdown("---")
+
