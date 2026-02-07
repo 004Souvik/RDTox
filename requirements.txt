@@ -2,5 +2,6 @@ numpy
 pandas
 openpyxl
 scikit-learn
-streamlit
-altair<5
+streamlit>=1.40.0
+altair>=5.0.0
+pillow
