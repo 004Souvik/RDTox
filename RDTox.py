@@ -131,6 +131,7 @@ else:
 
 # small footer
 st.markdown("---")
+st.write("Codeveloped by the DTC Lab and GPC Group.")
 
 
 
